@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vigenère cipher</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="identifier-url" content="https://thiagorocha503.github.io/" />
+    <meta name="title" content="Vigenère cipher" />
+    <meta name="description" content=" vigenère cipher online" />
+    <meta name="abstract" content=" vigenère cipher online" />
+    <meta name="keywords" content="vigenère cipher, cipher, vigenère," />
+    <meta name="author" content="Thiago Rocha Ferreira" />
+    <meta name="revisit-after" content="13" />
+    <meta name="language" content="EN" />
+    <meta name="copyright" content="© 2020 Thiago Rocha Ferreira" />
+    <meta name="robots" content="All" />
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div id="app">
+                <div>
+                    <h1 id="title">Vigenère cipher</h1>
+                </div>
+                <div id="div-input">
+                    <div class="div-textarea">
+                        <label for="input-text">Text</label><br>
+                        <textarea id="input-text" placeholder="Enter text"></textarea>
+                    </div>
+                    <div class="div_20">
+                        <label for="input-key">Key</label><br>
+                        <input type="text" name="" id="input-key" placeholder="Enter key"><br>
+                    </div>
+                </div>
+                <div id="div-actions">
+                    <div id="div-buttons">
+                        <button class="button" onclick="clickEncrypt();" onmousedown="hideResult();">Encrypt</button>
+                        <button class="button" onclick="clickDecrypt();" onmousedown="hideResult();">Decrypt</button>
+                    </div>
+                </div>
+                <div id="div-output" style="display: none;">
+                    <div class="div-textarea">
+                        <label for="output-text">Result</label><br>
+                        <textarea id="output-text" readonly></textarea>
+                    </div>
+                    <div class="div_20">
+                        <input type="button" class="button" value="Copy" onclick="onCopy();" style="float: right;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <p id="footer-content">Made with <span id="heart-emoji">❤</span> by <a href="http://github.com/thiagorocha503/vigenere-cipher" target="_blank" id="github-link" rel="noopener noreferrer">Thiago Rocha</a></p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
