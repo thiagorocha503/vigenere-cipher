@@ -37,8 +37,8 @@
                 </div>
                 <div id="div-actions">
                     <div id="div-buttons">
-                        <button class="button" onclick="clickEncrypt();" onmousedown="hideResult();">Encrypt</button>
-                        <button class="button" onclick="clickDecrypt();" onmousedown="hideResult();">Decrypt</button>
+                        <button class="button" id="btn-encrypt">Encrypt</button>
+                        <button class="button" id="btn-decrypt">Decrypt</button>
                     </div>
                 </div>
                 <div id="div-output" style="display: none;">
@@ -47,7 +47,7 @@
                         <textarea id="output-text" readonly></textarea>
                     </div>
                     <div class="div_20">
-                        <input type="button" class="button" value="Copy" onclick="onCopy();" style="float: right;">
+                        <input type="button" class="button" value="Copy" id="btn-copy" style="float: right;">
                     </div>
                 </div>
             </div>
